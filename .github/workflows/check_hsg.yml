@@ -21,4 +21,6 @@ jobs:
         with:
           # version: '1'
           version: 'nightly'
+      - run: git status
       - run: julia --color=yes .ci/check_hsg.jl
+      - run: git status
